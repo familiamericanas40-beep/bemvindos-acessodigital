@@ -1,1 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinda Box Baby | Carter's</title>
+  <!-- Google Ads e políticas obrigatórias -->
+  <meta name="description" content="Loja oficial Dinda Box Baby - Roupas infantis Carter's. Atacado e varejo. CNPJ 11.523.898/0004-41." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.dindabox.com.br/" />
+  <!-- Política de Privacidade (link direto) -->
+  <link rel="privacy-policy" href="#politica-privacidade" />
+  <!-- Estilos base -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: #f8f5f0;
+      color: #2d2a24;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    /* cabeçalho minimalista */
+    .top-bar {
+      background-color: #fff;
+      border-bottom: 1px solid #e2dcd3;
+      padding: 12px 0;
+      font-size: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar .info span {
+      margin-right: 20px;
+      color: #4a443c;
+    }
+    .top-bar .contact a {
+      color: #2d2a24;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 16px 0;
+      background: #fff;
+    }
+    .logo {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: #1e3a5f;
+    }
+    .logo small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #6b6256;
+      display: block;
+    }
+    .search-bar {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      margin: 0 20px;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 10px 16px;
+      border: 1px solid #d6cec0;
+      border-radius: 30px 0 0 30px;
+      outline: none;
+      background: #fefcf9;
+    }
+    .search-bar button {
+      background: #1e3a5f;
+      border: none;
+      padding: 0 20px;
+      border-radius: 0 30px 30px 0;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .cart-icon {
+      background: #f0ebe3;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    /* navegação */
+    .nav-main {
+      background: #fff;
+      border-top: 1px solid #e2dcd3;
+      border-bottom: 1px solid #e2dcd3;
+      padding: 8px 0;
+      margin: 8px 0 20px;
+    }
+    .nav-main ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 24px;
+      font-weight: 500;
+    }
+    .nav-main ul li a {
+      text-decoration: none;
+      color: #2d2a24;
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.15s;
+    }
+    .nav-main ul li a:hover {
+      border-bottom-color: #1e3a5f;
+    }
+    /* grade de produtos */
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 32px 0 16px;
+      letter-spacing: -0.3px;
+      border-left: 6px solid #1e3a5f;
+      padding-left: 14px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px 16px;
+      margin-bottom: 40px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px 12px 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      transition: 0.2s;
+      border: 1px solid #ede8df;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border-color: #c9bfb0;
+    }
+    .product-card .badge {
+      background: #d4a373;
+      color: white;
+      font-size: 0.7rem;
+      padding: 2px 10px;
+      border-radius: 20px;
+      align-self: flex-start;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .product-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1.1;
+      object-fit: cover;
+      background: #f3efe8;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="%23b8aa99" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 16l4-4 4 4 6-6 4 4"/><circle cx="8" cy="9" r="1.5"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60px;
+    }
+    .product-card .name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 6px 0 4px;
+      color: #1f1b16;
+      line-height: 1.3;
+      min-height: 44px;
+    }
+    .product-card .price {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #1e3a5f;
+      margin: 6px 0 2px;
+    }
+    .product-card .old-price {
+      font-size: 0.8rem;
+      color: #7a7062;
+      text-decoration: line-through;
+      margin-right: 8px;
+    }
+    .product-card .installment {
+      font-size: 0.75rem;
+      color: #4f473d;
+    }
+    .product-card .pix {
+      font-size: 0.8rem;
+      color: #2b6e3b;
+      font-weight: 500;
+    }
+    .btn-add {
+      margin-top: 12px;
+      background: #1e3a5f;
+      border: none;
+      color: white;
+      padding: 10px 0;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.15s;
+      font-size: 0.9rem;
+    }
+    .btn-add:hover {
+      background: #143049;
+    }
+    /* rodapé com políticas */
+    .footer {
+      background: #1e1c18;
+      color: #ded9d0;
+      padding: 40px 0 24px;
+      margin-top: 40px;
+      border-top: 4px solid #b8aa99;
+    }
+    .footer a {
+      color: #d6cdc0;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .footer-grid h4 {
+      color: #ede8df;
+      margin-bottom: 16px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+    .footer-grid ul {
+      list-style: none;
+    }
+    .footer-grid ul li {
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+    .footer-cnpj {
+      font-size: 0.8rem;
+      border-top: 1px solid #3d3730;
+      padding-top: 24px;
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .privacy-policy {
+      background: #2b2722;
+      padding: 20px 0;
+      color: #cbc2b5;
+      font-size: 0.85rem;
+      border-top: 1px solid #4a443c;
+    }
+    .privacy-policy .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      justify-content: center;
+    }
+    .privacy-policy a {
+      color: #e0d6c8;
+    }
+    /* selo google ads */
+    .google-ads-badge {
+      background: #f1efe8;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 0.7rem;
+      color: #4f473d;
+      border-bottom: 1px solid #ddd6ca;
+      letter-spacing: 0.3px;
+    }
+    .google-ads-badge span {
+      background: #ffffffd0;
+      padding: 2px 12px;
+      border-radius: 30px;
+    }
+    @media (max-width: 640px) {
+      .top-bar { flex-direction: column; align-items: flex-start; gap: 6px; }
+      .logo-area { flex-wrap: wrap; }
+      .search-bar { margin: 8px 0; }
+      .nav-main ul { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de informações -->
+  <div class="top-bar container">
+    <div class="info">
+      <span>📦 Dinda Box Baby</span>
+      <span>CNPJ: 11.523.898/0004-41</span>
+      <span>Matriz: São Paulo - SP</span>
+    </div>
+    <div class="contact">
+      <a href="mailto:contato@dindabox.com.br">✉ contato@dindabox.com.br</a>
+      <a href="tel:+5511326XXXX">📞 (11) 326X-XXXX</a>
+    </div>
+  </div>
 
+  <!-- Logo + Busca + Carrinho -->
+  <div class="container logo-area">
+    <div class="logo">
+      Dinda Box Baby
+      <small>Carter's • Roupas infantis</small>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar produtos... (ex: macacão, body)" />
+      <button>Buscar</button>
+    </div>
+    <div class="cart-icon">
+      🛒 Carrinho <span style="background:#1e3a5f; color:white; border-radius:30px; padding:0 10px; margin-left:4px;">0</span>
+    </div>
+  </div>
+
+  <!-- Navegação -->
+  <div class="nav-main container">
+    <ul>
+      <li><a href="#">Lançamentos</a></li>
+      <li><a href="#">Carter's</a></li>
+      <li><a href="#">Destaques</a></li>
+      <li><a href="#">Kits</a></li>
+      <li><a href="#">Atacado</a></li>
+      <li><a href="#">Institucional</a></li>
+    </ul>
+  </div>
+
+  <!-- Selo Google Ads (recomendado) -->
+  <div class="google-ads-badge">
+    <span>✅ Anúncios Google Ads • Política de Privacidade • Transparência</span>
+  </div>
+
+  <!-- Conteúdo principal: produtos -->
+  <div class="container">
+    <h2 class="section-title">✨ Lançamentos</h2>
+    <div class="product-grid">
+      <!-- Card 1 -->
+      <div class="product-card">
+        <span class="badge">16% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">MACACÃO CARTER´S FLEECE BICHINHOS DA FLORESTA K3</div>
+        <div class="price"><span class="old-price">R$189,90</span> R$159,90</div>
+        <div class="pix">R$151,91 no PIX</div>
+        <div class="installment">10x de R$15,99 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="product-card">
+        <span class="badge">13% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">MACACÃO CARTER´S ALGODÃO QUEBRA - NOZES D1</div>
+        <div class="price"><span class="old-price">R$149,90</span> R$129,90</div>
+        <div class="pix">R$123,41 no PIX</div>
+        <div class="installment">10x de R$12,99 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="product-card">
+        <span class="badge">16% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">MACACÃO CARTER´S FLEECE CISNE K3</div>
+        <div class="price"><span class="old-price">R$189,90</span> R$159,90</div>
+        <div class="pix">R$151,91 no PIX</div>
+        <div class="installment">10x de R$15,99 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+      <!-- Card 4 -->
+      <div class="product-card">
+        <span class="badge">23% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">KIT 2 PEÇAS CARTERS PRINCESA H3</div>
+        <div class="price"><span class="old-price">R$219,00</span> R$169,00</div>
+        <div class="pix">R$160,55 no PIX</div>
+        <div class="installment">10x de R$16,90 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+    </div>
+
+    <h2 class="section-title">🧸 Carter's</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="badge">7% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">MACACÃO CARTER´S ALGODÃO BORBOLETA B1</div>
+        <div class="price"><span class="old-price">R$149,90</span> R$139,90</div>
+        <div class="pix">R$132,91 no PIX</div>
+        <div class="installment">10x de R$13,99 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+      <div class="product-card">
+        <span class="badge">17% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">KIT 5 BODY CARTER´S MANGA CURTA MEIOS DE TRANSPORTE F3</div>
+        <div class="price"><span class="old-price">R$228,00</span> R$189,90</div>
+        <div class="pix">R$180,41 no PIX</div>
+        <div class="installment">10x de R$18,99 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+      <div class="product-card">
+        <span class="badge">17% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">KIT 5 BODY CARTER´S COOKIES BISCOITOS F3</div>
+        <div class="price"><span class="old-price">R$228,00</span> R$189,90</div>
+        <div class="pix">R$180,41 no PIX</div>
+        <div class="installment">10x de R$18,99 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+      <div class="product-card">
+        <span class="badge">16% OFF</span>
+        <div class="product-image" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23b8aa99%22><rect x=%223%22 y=%223%22 width=%2218%22 height=%2218%22 rx=%222%22/><path d=%22M3 16l4-4 4 4 6-6 4 4%22/><circle cx=%228%22 cy=%229%22 r=%221.5%22/></svg>'); background-size: 60px; background-position: center; background-repeat: no-repeat; background-color: #f3efe8; aspect-ratio:1/1.1; border-radius:10px; margin-bottom:8px;"></div>
+        <div class="name">MACACÃO CARTER´S FLEECE URSO - J3</div>
+        <div class="price"><span class="old-price">R$189,90</span> R$159,90</div>
+        <div class="pix">R$151,91 no PIX</div>
+        <div class="installment">10x de R$15,99 sem juros</div>
+        <button class="btn-add">Adicionar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé com políticas e dados da empresa -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>📌 Dinda Box Baby</h4>
+        <ul>
+          <li>Kzm Comercio e Importacao LTDA</li>
+          <li>CNPJ: 11.523.898/0004-41</li>
+          <li>IE: 138.795.215.114</li>
+          <li>Rua Guaricanga, 364 - Sala 4</li>
+          <li>Lapa, São Paulo - SP, 05075-030</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Sobre a Dinda Box</a></li>
+          <li><a href="#">Atacado &amp; Importação</a></li>
+          <li><a href="#">Trabalhe conosco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="mailto:contato@dindabox.com.br">contato@dindabox.com.br</a></li>
+          <li>(11) 326X-XXXX</li>
+          <li>Seg-Sex 9h-18h</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Políticas</h4>
+        <ul>
+          <li><a href="#politica-privacidade" id="politica-privacidade">🔒 Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Trocas e Devoluções</a></li>
+          <li><a href="#">LGPD</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-cnpj">
+      <span>© 2026 Dinda Box Baby - Todos os direitos reservados.</span>
+      <span>CNPJ 11.523.898/0004-41 | Sociedade Empresária Limitada</span>
+    </div>
+  </footer>
+
+  <!-- Política de Privacidade (detalhada, visível na âncora) -->
+  <div class="privacy-policy" id="politica-privacidade">
+    <div class="container">
+      <span><strong>Política de Privacidade</strong> – Dinda Box Baby (Kzm Comercio e Importacao LTDA)</span>
+      <span>Coletamos dados para processamento de pedidos, envio de comunicações e melhorias. Não compartilhamos com terceiros exceto para entrega e pagamento.</span>
+      <span>Você pode solicitar exclusão de dados a qualquer momento.</span>
+      <a href="#">Leia a política completa</a>
+    </div>
+  </div>
+  <!-- selo ads -->
+  <div style="background:#f3efe8; text-align:center; padding:6px 0; font-size:0.7rem; color:#4f473d; border-top:1px solid #ddd6ca;">
+    ✅ Este site segue as diretrizes do Google Ads – Política de Privacidade e termos de serviço.
+  </div>
+</body>
+</html>
